@@ -64,7 +64,6 @@ function LoanCalcuator() {
             onClick={() => {
               CalculateEMI();
             }}
-            disabled={true}
           />
         </div>
       </div>
