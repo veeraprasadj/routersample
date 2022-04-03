@@ -12,6 +12,12 @@ function Nav() {
   return (
     <nav className="Nav">
       <ul className="nav-links">
+        <Link to="/loan" style={navItemStyle}>
+          <li>LoanCalculator</li>
+        </Link>
+        <Link to="/tax" style={navItemStyle}>
+          <li>TaxCalculator</li>
+        </Link>
         <Link to="/home" style={navItemStyle}>
           <li>Home</li>
         </Link>

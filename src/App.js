@@ -4,13 +4,18 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import { About } from "./Components/About";
 import Nav from "./Components/nav";
+import LoanCalcuator from "./Components/LoanCalcuator";
+import TaxCalculator from "./Components/TaxCalculator";
 
 function App() {
   return (
     <div>
       <Nav></Nav>
+      <br />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<LoanCalcuator />}></Route>
+        <Route path="/loan" element={<LoanCalcuator />}></Route>
+        <Route path="/tax" element={<TaxCalculator />}></Route>
         <Route path="/Home" element={<Home />}></Route>
         <Route path="/about" element={<About />} />
       </Routes>
