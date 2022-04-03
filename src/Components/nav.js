@@ -18,6 +18,9 @@ function Nav() {
         <Link to="/tax" style={navItemStyle}>
           <li>TaxCalculator</li>
         </Link>
+        <Link to="/bugtracker" style={navItemStyle}>
+          <li>BugTracker</li>
+        </Link>
         <Link to="/home" style={navItemStyle}>
           <li>Home</li>
         </Link>
