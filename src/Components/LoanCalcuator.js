@@ -8,7 +8,7 @@ function LoanCalcuator() {
   const [tenure, setTenure] = useState(0);
 
   const CalculateEMI = () => {
-    alert("EMI calculated");
+    alert("Test is completed");
   };
 
   return (
