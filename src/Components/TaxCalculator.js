@@ -49,9 +49,11 @@ function TaxCalculator() {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
-          {formik.touched.principleAmount && formik.errors.principleAmount
-            ? formik.errors.principleAmount
-            : null}
+          <div className="text-danger">
+            {formik.touched.principleAmount && formik.errors.principleAmount
+              ? formik.errors.principleAmount
+              : null}
+          </div>
         </div>
         <div className="form-group my-3">
           <label htmlFor="ir">Enter Interest Rate</label>
@@ -65,7 +67,9 @@ function TaxCalculator() {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
-          {formik.touched.ir && formik.errors.ir ? formik.errors.ir : null}
+          <div className="text-danger">
+            {formik.touched.ir && formik.errors.ir ? formik.errors.ir : null}
+          </div>
         </div>
         <div className="form-group my-3">
           <label htmlFor="tenure">Enter Tenure in Years</label>
@@ -79,9 +83,11 @@ function TaxCalculator() {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
-          {formik.touched.tenure && formik.errors.tenure
-            ? formik.errors.tenure
-            : null}
+          <div className="text-danger">
+            {formik.touched.tenure && formik.errors.tenure
+              ? formik.errors.tenure
+              : null}
+          </div>
         </div>
         <div className="form-group mt-3">
           {/* <input type="submit">Calculate EMI</input> */}
