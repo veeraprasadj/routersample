@@ -54,3 +54,8 @@
   list-style: none;
   font-size: 25px;
 }
+
+.app-container{
+  /* display:flex; */
+  margin: 5%;
+}

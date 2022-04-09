@@ -12,15 +12,17 @@ function App() {
   return (
     <div>
       <Nav></Nav>
-      <br />
-      <Routes>
-        <Route path="/" element={<LoanCalcuator />}></Route>
-        <Route path="/loan" element={<LoanCalcuator />}></Route>
-        <Route path="/tax" element={<TaxCalculator />}></Route>
-        <Route path="/bugtracker" element={<BugTracker />}></Route>
-        <Route path="/Home" element={<Home />}></Route>
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <div className="app-container">
+        <br />
+        <Routes>
+          <Route path="/" element={<LoanCalcuator />}></Route>
+          <Route path="/loan" element={<LoanCalcuator />}></Route>
+          <Route path="/tax" element={<TaxCalculator />}></Route>
+          <Route path="/bugtracker" element={<BugTracker />}></Route>
+          <Route path="/Home" element={<Home />}></Route>
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
     </div>
   );
 }
